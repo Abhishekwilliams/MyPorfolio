@@ -39,7 +39,8 @@ export class AppComponent implements OnInit {
         start: "top 80%",
         end: "top 50%",
         scrub: true,
-        markers: false //majke it true to make markers appear.
+        // markers: true  
+        //markers appears
       }
     });
     //  gsap.to(".skills-list", {
