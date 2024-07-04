@@ -147,7 +147,26 @@
 .project-background:hover img {
   opacity: 0.7;
 }
-
+.see-more-github {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .see-more-github a {
+    font-size: 1.5rem;
+    color: black; /* You can change the color to fit your design */
+    text-decoration: none;
+    border: 2px solid black; /* Black border */
+    box-shadow: 0 10px 20px rgba(255, 254, 254, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .see-more-github a:hover {
+    background-color: black;
+    color: white;
+  }
 /* Page 4 styling */
 #page4 {
     height: 80%;
@@ -159,6 +178,9 @@
     flex-direction: column;
     padding-bottom: 5rem; /* Ensure space for footer */
     
+  }
+  #page4 h3 {
+    color:#000000
   }
   #page4 h2{
     font-size: 6vw;
