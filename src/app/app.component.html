@@ -1,0 +1,78 @@
+
+<!-- <div id="base"> -->
+ <app-header></app-header>
+  <div id="page1">
+    <img src="../assets/ABHI.jpg" alt="Abhishek Williams">
+    <h1>Hi, I am Abhishek Williams</h1>
+    <h1>I am a software developer</h1>
+    <h1>I like coding!!!</h1>
+  </div> 
+  <div id="page2">
+    <h1>Experiences</h1>
+  </div>
+  <div id="page3">
+    <div class="container work-section">
+      <h3 class="text-center mb-4">Some of My Work</h3>
+      <div class="row">
+        <div class="work-item" (mouseover)="addEffects($event)" (mouseout)="removeEffects($event)">
+          <a href="https://github.com/Abhishekwilliams/django-deployment-example/tree/master/learning_templates">
+            <div class="project-background" style="background-image: url('https://wallpapercave.com/dwp1x/wp2471826.jpg');">
+              <p>Heart-Disease-Predictor</p>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXoa59T6l1WBkC-PMA3rXwtKfC-n4om1hd0Q&usqp=CAU" class="img-fluid" alt="Image">
+            </div>
+          </a>
+        </div>
+        <div class="work-item" (mouseover)="addEffects($event)" (mouseout)="removeEffects($event)">
+          <a href="https://github.com/YourUserName/Project2">
+            <div class="project-background" style="background-image: url('https://wallpapercave.com/dwp1x/wp2471826.jpg');">
+              <p>Deslexia-Screening</p>
+              <img src="https://decodingdyslexiaga.com/wp-content/uploads/2021/06/PRACTICE-READING-CVC-WORDS-by-V3R0N.png" class="img-fluid" alt="Image">
+            </div>
+          </a>
+        </div>
+        <div class="work-item" (mouseover)="addEffects($event)" (mouseout)="removeEffects($event)">
+          <a href="https://github.com/Abhishekwilliams/blog-project/tree/main/blog_project/mysite">
+            <div class="project-background" style="background-image: url('https://wallpapercave.com/dwp1x/wp2471826.jpg');">
+              <p>Blog</p>
+              <img src="https://png.pngtree.com/thumb_back/fh260/background/20220812/pngtree-web-design-concept-blog-on-puzzle-background-site-system-content-photo-image_22615716.jpg" class="img-fluid" alt="Image">
+            </div>
+          </a>
+        </div>
+        <div class="work-item" (mouseover)="addEffects($event)" (mouseout)="removeEffects($event)">
+          <a href="https://github.com/YourUserName/Project1">
+            <div class="project-background" style="background-image: url('https://wallpapercave.com/dwp1x/wp2471826.jpg');">
+              <p>Soccer Sensei</p>
+              <img src="https://png.pngtree.com/png-vector/20230814/ourmid/pngtree-cartoon-soccer-ball-ball-child-vector-png-image_6902158.png" class="img-fluid" alt="Image">
+            </div>
+          </a>
+        </div>
+        <!-- Repeat the above structure for other projects -->
+      </div>
+    </div>
+  </div>
+  <div id="page4">
+    <!-- Additional content for page4 can be added here -->
+    <h1 class="skills-title">Skills</h1>
+  <div class="skills-list">
+    <p>HTML</p>
+    <p>CSS</p>
+    <p>JavaScript</p>
+    <p>Angular</p>
+    <p>React</p>
+    <p>Node.js</p>
+    <!-- Add more skills as needed -->
+  </div>
+  </div>
+  <div id="page5">
+    <h1 class="contact-title">Contact Me</h1>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+<!-- </div> -->
+
+<!-- <router-outlet></router-outlet> -->
+<app-footer></app-footer>
