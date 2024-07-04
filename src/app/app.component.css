@@ -150,36 +150,82 @@
 
 /* Page 4 styling */
 #page4 {
-  height: 80%;
-  width: 100%;
-  background-color: rgb(154, 255, 53);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding-bottom: 5rem; /* Ensure space for footer */
-  /* margin-bottom: -100vh; Reduce the height by 100vh */
-}
-
-.skills-title {
-  color: black;
-  font-size: 6rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-}
-
-.skills-list {
-  display: flex;
-  gap: 1rem;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 1s ease-in-out; /* Smooth transition */
-}
-
-.skills-list p {
-  font-size: 3rem;
-  color: black;
-}
-
+    height: 80%;
+    width: 100%;
+    background-color: rgb(154, 255, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5rem; /* Ensure space for footer */
+    
+  }
+  #page4 h2{
+    font-size: 6vw;
+    font-weight: 700;
+  }
+  
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px; /* Adjust max-width as needed */
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .skills-title {
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center; /* Center the skills title */
+  }
+  
+  .skills-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #666;
+    text-align: center; /* Center the skills subtitle */
+  }
+  
+  .skills-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 5rem; /* Adjust the gap between categories */
+    justify-items: center; /* Center items horizontally in each column */
+  }
+  
+  .skills-category {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 100%; /* Full width of the column */
+    background-color: #ffffff0d; /* White background */
+  }
+  
+  .skills-category h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-list li {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .skills-list li:last-child {
+    margin-bottom: 0;
+  }
 /* Anchor styling */
 a {
   text-decoration: none; /* Remove underline from anchor elements */

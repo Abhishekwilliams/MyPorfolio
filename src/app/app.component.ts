@@ -42,17 +42,17 @@ export class AppComponent implements OnInit {
         markers: true
       }
     });
-    gsap.to(".skills-list", {
-      opacity: 1,
-      scrollTrigger: {
-        trigger: ".skills-list",
-        scroller: "body",
-        start: "top 80%",
-        end: "top 50%",
-        scrub: true,
-        markers: true
-      }
-    });
+    //  gsap.to(".skills-list", {
+    //   opacity: 1,
+    //   scrollTrigger: {
+    //     trigger: ".skills-list",
+    //     scroller: "body",
+    //     start: "top 80%",
+    //     end: "top 50%",
+    //     scrub: true,
+    //     markers: true
+    //   }
+    // });
   }
 
   addEffects(event: Event) {
