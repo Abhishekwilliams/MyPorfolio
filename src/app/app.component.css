@@ -44,7 +44,7 @@
   border-radius: 50%;
   opacity: 0;
   transform: scale(0);
-  box-shadow: 0 10px 20px rgba(255, 254, 254, 0.2);
+  box-shadow: 0 10px 20px rgba(255, 254, 254, 0.386);
 }
 
 #page1 h1 {
@@ -78,6 +78,8 @@
   height: 100%;
   width: 100%;
   background-color: rgb(47, 47, 47);
+  padding-top: 0px;
+
 }
 
 #page3 h3 {
@@ -89,7 +91,7 @@
 }
 
 .work-section {
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .row {
@@ -148,13 +150,14 @@
   opacity: 0.7;
 }
 .see-more-github {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
   }
   
   .see-more-github a {
     font-size: 1.5rem;
-    color: black; /* You can change the color to fit your design */
+    color: rgb(255, 255, 255); /* You can change the color to fit your design */
     text-decoration: none;
     border: 2px solid black; /* Black border */
     box-shadow: 0 10px 20px rgba(255, 254, 254, 0.2);
@@ -195,6 +198,7 @@
     max-width: 1000px; /* Adjust max-width as needed */
     padding: 2rem;
     border-radius: 10px;
+    
   }
   
   .skills-title {
@@ -203,6 +207,8 @@
     margin-bottom: 1rem;
     text-transform: uppercase;
     text-align: center; /* Center the skills title */
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   
   .skills-subtitle {
@@ -214,9 +220,11 @@
   
   .skills-categories {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-columns: repeat(3, 1fr); /* Two columns */
     gap: 5rem; /* Adjust the gap between categories */
     justify-items: center; /* Center items horizontally in each column */
+    
+
   }
   
   .skills-category {
@@ -225,22 +233,28 @@
     padding: 1.5rem;
     width: 100%; /* Full width of the column */
     background-color: #ffffff0d; /* White background */
+    
   }
   
   .skills-category h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     color: black;
   }
   
   .skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 3rem; /* Adjust the gap between categories */
+    justify-items: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
   
   .skills-list li {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
     color: #333;
   }
@@ -281,7 +295,7 @@ a {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
+    background-color: #e0e0e0;
   }
   
   .contact-form input,
@@ -306,4 +320,11 @@ a {
   
   .contact-form button:hover {
     background-color: rgb(123, 204, 42);
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
   }
