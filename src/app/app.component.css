@@ -223,6 +223,7 @@
     grid-template-columns: repeat(3, 1fr); /* Two columns */
     gap: 5rem; /* Adjust the gap between categories */
     justify-items: center; /* Center items horizontally in each column */
+    text-align:left ;
     
 
   }
@@ -246,15 +247,15 @@
   .skills-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 3rem; /* Adjust the gap between categories */
-    justify-items: center;
+    gap: 2rem; /* Adjust the gap between categories */
+    justify-items: left;
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
   
   .skills-list li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #333;
   }
