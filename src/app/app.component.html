@@ -117,15 +117,42 @@
       </div>
     </div>
   </div>
-  <div id="page5">
-    <h1 class="contact-title">Contact Me</h1>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+  <!-- Page 5: About Me -->
+<div id="page5">
+  <div class="container about-section">
+    <h2>About Me</h2>
+    <p class="about-intro">- My Introduction -</p>
+    <p class="about-description">
+      I am a Computer Science graduate student at Lambton College and have worked as a Software Engineer at Unified Infotech. I am passionate about problem solving and software development. I also love competitive programming, playing the guitar, and listening music.
+    </p>
+    <div class="resume-button">
+      <a href="https://drive.google.com/file/d/1nsU-0m0X-kRGMAmNlH2wBjq6qEPmBQpU/view?usp=sharing" target="_blank" class="btn">
+        <img src="assets/resume-svgrepo-com.svg" alt="Download Icon" class="icon">
+        View My Resume</a>
+    </div>
   </div>
+</div>
+
+<!-- Page 6: Publications -->
+<div id="page6">
+  <div class="container publications-section">
+    <h2>Publications</h2>
+    <p class="publication-title">Heart Disease Monitoring System using Random Forest Algorithm</p>
+    <p class="publication-details">International Journal of Innovative Technology and Exploring Engineering (IJITEE) · May 1, 2021</p>
+    <div class="publication-button">
+      <a href="https://drive.google.com/file/d/1jp5-F_qEnh3_o_TV4-fGC7maHPaWGica/view?usp=drive_link" target="_blank" class="btn">Show Publication</a>
+    </div>
+  </div>
+</div>
+<div id="page7">
+  <h2 class="contact-title">Contact Me</h2>
+  <form class="contact-form" (submit)="onSubmit($event)">
+    <input type="text" placeholder="Your Name" required [(ngModel)]="name">
+    <input type="email" placeholder="Your Email" required [(ngModel)]="email">
+    <textarea placeholder="Your Message" rows="5" required [(ngModel)]="message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>
 <!-- </div> -->
 
 <!-- <router-outlet></router-outlet> -->

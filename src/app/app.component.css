@@ -180,6 +180,9 @@
     justify-content: center;
     flex-direction: column;
     padding-bottom: 5rem; /* Ensure space for footer */
+
+    padding-top: 5rem;
+
     
   }
   #page4 h3 {
@@ -188,6 +191,10 @@
   #page4 h2{
     font-size: 6vw;
     font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateX(100%); /* Initial position for animation */
+    transition: opacity 0.5s, transform 0.5s; /* Smooth transitions */
   }
   
   .skills-section {
@@ -269,8 +276,96 @@ a {
   color: inherit; /* Optional: Ensure link text inherits the color of the surrounding text */
 }
 
-/* Page 5 styling */
+/* Page 5: About Me Section */
 #page5 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(47, 47, 47);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#page5 h2 {
+  margin-top: 50px;
+ 
+  font-size: 6vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0; /* Initial opacity for animation */
+  transform: translateX(100%); /* Initial position for animation */
+  transition: opacity 0.5s, transform 0.5s; /* Smooth transitions */
+}
+.about-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.about-intro {
+  font-style: italic;
+}
+
+.about-description {
+  margin: 10px 0;
+  
+}
+
+.resume-button {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  background-color: rgb(154, 255, 53);
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgba(154, 255, 53, 0.383);
+}
+
+/* Page 6: Publications Section */
+#page6 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+#page6 h2{
+  font-size: 6vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0; /* Initial opacity for animation */
+  transform: translateX(100%); /* Initial position for animation */
+  transition: opacity 0.5s, transform 0.5s; /* Smooth transitions */
+}
+.publications-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.publication-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.publication-details {
+  margin: 10px 0;
+}
+
+.publication-button {
+  margin-top: 20px;
+}
+/* Page 7 styling */
+#page7 {
     height: 100vh; /* Full viewport height */
     width: 100%;
     background-color: rgb(255, 255, 255); /* White background */
@@ -280,12 +375,21 @@ a {
     flex-direction: column;
   }
   
-  .contact-title {
+  #page7 h2{
     color: black;
+    font-size: 6vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0; /* Initial opacity for animation */
+    transform: translateX(100%); /* Initial position for animation */
+    transition: opacity 0.5s, transform 0.5s; /* Smooth transitions */
+  }
+  /* .contact-title {
+    
     font-size: 6rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
-  }
+  } */
   
   .contact-form {
     display: flex;
@@ -328,4 +432,34 @@ a {
     height: 20px;
     margin-right: 8px;
     vertical-align: middle;
+  }
+
+  .about-section, .publications-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .about-intro {
+    font-style: italic;
+  }
+  
+  .about-description, .publication-details {
+    margin: 10px 0;
+  }
+  
+  .resume-button, .publication-button {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: rgb(154, 255, 53);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color:rgba(154, 255, 53, 0.383);
   }
