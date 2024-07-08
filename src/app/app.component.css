@@ -283,7 +283,7 @@ a {
   padding: 20px;
 }
 
-.about-intro {
+.about-intro ,.publication-title{
   font-style: italic;
 }
 
