@@ -308,93 +308,93 @@ a {
   background-color: rgba(154, 255, 53, 0.383);
 }
 /* Page 7 styling */
-#page7 {
-    height: 100vh; /* Full viewport height */
-    width: 100%;
-    background-color: rgb(255, 255, 255); /* White background */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
+/* #page7 {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-  .contact-title {
-    color: #000000;
-    font-size: 6rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    max-width: 600px;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    background-color: #e0e0e0;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact-form button {
-    padding: 1rem 2rem;
-    background-color: rgb(154, 255, 53);
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 1rem;
-  }
-  
-  .contact-form button:hover {
-    background-color: rgb(123, 204, 42);
-  }
+.contact-title {
+  color: #000;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
 
-  .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    vertical-align: middle;
-  }
+.contact-form {
+  width: 80%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .about-section, .publications-section {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .about-intro {
-    font-style: italic;
-  }
-  
-  .about-description, .publication-details {
-    margin: 10px 0;
-  }
-  
-  .resume-button, .publication-button {
-    margin-top: 20px;
-  }
-  
-  .btn {
-    background-color: rgb(154, 255, 53);
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .btn:hover {
-    background-color:rgba(154, 255, 53, 0.383);
-  }
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 1rem 2rem;
+  background-color: rgb(154, 255, 53);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: rgb(123, 204, 42);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.about-section, .publications-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.about-intro {
+  font-style: italic;
+}
+
+.about-description, .publication-details {
+  margin: 10px 0;
+}
+
+.resume-button, .publication-button {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: rgb(154, 255, 53);
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgba(154, 255, 53, 0.383);
+} */
