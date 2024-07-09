@@ -28,7 +28,7 @@ import { Observable } from 'rxjs';
 })
 export class MailService {
 
-  private apiUrl = 'http://127.0.0.1:5000/send-email'; // Update this URL as needed
+  private apiUrl = 'https://portfbackend.up.railway.app/send-email'; // Update this URL as needed
 
   constructor(private http: HttpClient) { }
 
@@ -38,3 +38,4 @@ export class MailService {
     return this.http.post<any>(this.apiUrl, body, { headers });
   }
 }
+
