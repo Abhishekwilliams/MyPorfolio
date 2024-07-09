@@ -23,7 +23,7 @@
           </a>
         </div>
         <div class="work-item" (mouseover)="addEffects($event)" (mouseout)="removeEffects($event)">
-          <a href="https://github.com/YourUserName/Project2">
+          <a href="https://github.com/Abhishekwilliams/Dyslexia-Screening">
             <div class="project-background" style="background-image: url('https://wallpapercave.com/dwp1x/wp2471826.jpg');">
               <p>Deslexia-Screening</p>
               <img src="https://decodingdyslexiaga.com/wp-content/uploads/2021/06/PRACTICE-READING-CVC-WORDS-by-V3R0N.png" class="img-fluid" alt="Image">
@@ -39,10 +39,10 @@
           </a>
         </div>
         <div class="work-item" (mouseover)="addEffects($event)" (mouseout)="removeEffects($event)">
-          <a href="https://github.com/YourUserName/Project1">
+          <a href="https://main--plot4game.netlify.app/">
             <div class="project-background" style="background-image: url('https://wallpapercave.com/dwp1x/wp2471826.jpg');">
-              <p>Soccer Sensei</p>
-              <img src="https://png.pngtree.com/png-vector/20230814/ourmid/pngtree-cartoon-soccer-ball-ball-child-vector-png-image_6902158.png" class="img-fluid" alt="Image">
+              <p>PLOT 4</p>
+              <img src="assets/plot4.png" class="img-fluid" alt="Image">
             </div>
           </a>
           
@@ -148,12 +148,12 @@
 </div>
 <div id="page7">
   <h1 class="contact-title">Contact Me</h1>
-  <form class="contact-form" (submit)="onSubmit($event)">
-    <input type="text" placeholder="Your Name" required [(ngModel)]="name">
-    <input type="email" placeholder="Your Email" required [(ngModel)]="email">
-    <textarea placeholder="Your Message" rows="5" required [(ngModel)]="message"></textarea>
-    <button type="submit">Send</button>
-  </form>
+  <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
+  <input formControlName="name" placeholder="Name" (focus)="addEffects($event)" (blur)="removeEffects($event)">
+  <input formControlName="email" placeholder="Email" type="email" (focus)="addEffects($event)" (blur)="removeEffects($event)">
+  <textarea formControlName="message" placeholder="Message" rows="5" (focus)="addEffects($event)" (blur)="removeEffects($event)"></textarea>
+  <button type="submit">Send</button>
+</form>
 </div>
 <!-- </div> -->
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MailService } from './mail.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -10,11 +11,15 @@ import { MailService } from './mail.service';
 })
 export class AppComponent implements OnInit {
   title = 'portfolio-app';
-  name!: string;
-  email!: string;
-  message!: string;
+  contactForm: FormGroup;
 
-  constructor(private mailService: MailService) {}
+  constructor(private mailService: MailService, private fb: FormBuilder) {
+    this.contactForm = this.fb.group({
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required]
+    });
+  }
 
   ngOnInit() {
     gsap.registerPlugin(ScrollTrigger);
@@ -94,8 +99,9 @@ export class AppComponent implements OnInit {
   onSubmit(event: Event) {
     event.preventDefault(); // Prevent default form submission
 
-    if (this.name && this.email && this.message) {
-      this.mailService.sendEmail(this.name, this.email, this.message).subscribe(
+    if (this.contactForm.valid) {
+      const { name, email, message } = this.contactForm.value;
+      this.mailService.sendEmail(name, email, message).subscribe(
         response => {
           console.log('Email sent successfully', response);
           alert('Email sent successfully');
@@ -107,14 +113,12 @@ export class AppComponent implements OnInit {
         }
       );
     } else {
-      alert('Please fill in all fields.');
+      alert('Please fill in all fields correctly.');
     }
   }
 
   resetForm() {
-    this.name = '';
-    this.email = '';
-    this.message = '';
+    this.contactForm.reset();
   }
 
   addEffects(event: Event) {
@@ -126,6 +130,4 @@ export class AppComponent implements OnInit {
     const target = event.currentTarget as HTMLElement;
     gsap.to(target, { scale: 1, duration: 0.3 });
   }
-
- 
 }
