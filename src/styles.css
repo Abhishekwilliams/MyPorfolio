@@ -66,25 +66,8 @@ body {
 .contact-form button:hover {
   background-color: rgb(123, 204, 42);
 }
-/* Responsive styles */
-@media (max-width: 768px) {
-  .work-item {
-    flex: 1 1 100%; /* Full width on smaller screens */
-  }
-}
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .skills-categories {
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 2rem; /* Reduced gap for mobile layout */
-  }
 
-  .skills-list {
-    grid-template-columns: 1fr; /* Single column for skill items */
-    gap: 1rem; /* Adjust the gap between items */
-  }
-}
 
 
 
@@ -183,4 +166,11 @@ body {
 .see-more-github a:hover {
   background-color: black;
   color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .work-item {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
 }

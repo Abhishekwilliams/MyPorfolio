@@ -49,10 +49,6 @@
   transition: opacity 0.5s, transform 0.5s;
 }
 
-/* Page 3 styling */
-
-
-
 /* Page 4 styling */
 #page4 {
   height: 80%;
@@ -154,8 +150,21 @@ a {
   text-decoration: none; /* Remove underline from anchor elements */
   color: inherit; /* Optional: Ensure link text inherits the color of the surrounding text */
 }
+/* Responsive styles */
+@media (max-width: 768px) {
+  .skills-categories {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 2rem; /* Reduced gap for mobile layout */
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr; /* Single column for skill items */
+    gap: 1rem; /* Adjust the gap between items */
+  }
+}
 
 
+/* page5 and page6 */
 
 #page5, #page6 {
   height: 100vh;
