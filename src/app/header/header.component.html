@@ -1,4 +1,4 @@
-<nav class="navbar" style="right: 0px;">
+<nav class="navbar">
   <div class="container">
     <div class="navbar-brand">
       <a href="#">My Portfolio</a>
@@ -6,12 +6,12 @@
     <div class="navbar-toggle" (click)="toggleMenu()">☰</div> <!-- Menu toggle button -->
     <div class="navbar-menu" [ngClass]="{'active': isMenuOpen}">
       <ul class="navbar-links">
-        <li><a href="#page1">Home</a></li>
-        <li><a href="#page3">Experiences</a></li>
-        <li><a href="#page4">Skills</a></li>
-        <li><a href="#page5">AboutMe</a></li>
-        <li><a href="#page6">Publications</a></li>
-        <li><a href="#page7">Contact</a></li>
+        <li><a href="#page1" (click)="closeMenu()">Home</a></li>
+        <li><a href="#page3" (click)="closeMenu()">Experiences</a></li>
+        <li><a href="#page4" (click)="closeMenu()">Skills</a></li>
+        <li><a href="#page5" (click)="closeMenu()">AboutMe</a></li>
+        <li><a href="#page6" (click)="closeMenu()">Publications</a></li>
+        <li><a href="#page7" (click)="closeMenu()">Contact</a></li>
       </ul>
     </div>
   </div>
