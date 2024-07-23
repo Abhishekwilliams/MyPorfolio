@@ -184,7 +184,7 @@ a {
 }
 
 #page5 h2, #page6 h2 {
-  font-size: 6vw;
+  font-size: 10vw;
   font-weight: 700;
   text-transform: uppercase;
   opacity: 0;
@@ -223,6 +223,13 @@ a {
 }
 /* Page 7 styling */
 
+#page7 h2{
+  font-size: 10vw;
+  font-weight: 700;
+  /* opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s, transform 0.5s; */
+}
 .icon {
   width: 20px;
   height: 20px;
