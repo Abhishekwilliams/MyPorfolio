@@ -183,7 +183,6 @@ body {
   padding: 20px;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  
   /* background-color: rgb(110, 109, 109); */
 }
 
@@ -192,40 +191,42 @@ body {
   margin: 20px auto;
   border-collapse: collapse;
   text-align: left;
-  
 }
 
 .experience-table tr {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  
 }
 
 .experience-table td {
   padding: 15px;
   border: 1px solid #ddd;
-  width: 48%; /* Ensure columns are equal width */
+  width: 48%; /* Default width for larger screens */
   vertical-align: top;
   border-radius: 10px;
 }
 
-.experience h2, .other-experiences h3 {
+.experience h2,
+.other-experiences h3 {
   margin-bottom: 5px;
   color: #333;
 }
 
-.experience p, .other-experiences p {
+.experience p,
+.other-experiences p {
   margin-bottom: 10px;
   color: #555;
 }
 
-.experience ul, .other-experiences ul {
+.experience ul,
+.other-experiences ul {
   list-style-type: disc;
   margin-left: 20px;
 }
 
-.experience ul li, .other-experiences ul li {
+.experience ul li,
+.other-experiences ul li {
   margin-bottom: 5px;
 }
 
@@ -246,7 +247,7 @@ body {
 .button-container button {
   font-size: 1.5rem;
   color: rgb(4, 4, 4); /* Text color */
-  background-color: rgb(154, 255, 53); /* Transparent background */
+  background-color: rgb(154, 255, 53); /* Button background */
   border: 2px solid black; /* Black border */
   box-shadow: 0 10px 20px rgba(255, 254, 254, 0.2);
   padding: 0.5rem 1rem;
@@ -269,14 +270,17 @@ body {
 .full-width-table {
   width: 100%; /* Ensure the table spans the full width */
   margin: 0 auto; /* Center the table */
-  border-collapse: collapse;
-  /* text-align: left; */
-  text-align: center;
+  /* border-collapse: collapse; */
+  text-align: left;
+  
 }
-
+/* .full-width-table h2 ,p{
+  text-align: center;
+} */
 .full-width-table td {
   padding: 15px;
   border: 1px solid #ddd;
+  border-radius: 10px;
 }
 
 .button-container a.show-more-button {
@@ -294,4 +298,22 @@ body {
 .button-container a.show-more-button:hover {
   background-color: black;
   color: white;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .experience-table tr {
+    flex-direction: column; /* Stack columns on top of each other */
+  }
+
+  .experience-table td {
+    width: 90%; /* Full width for smaller screens */
+  }
+}
+
+/* Media Query to Keep Row Layout for Larger Screens */
+@media (min-width: 769px) {
+  .experience-table tr {
+    flex-direction: row; /* Keep row layout on larger screens */
+  }
 }
