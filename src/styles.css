@@ -174,3 +174,124 @@ body {
     flex: 1 1 100%; /* Full width on smaller screens */
   }
 }
+
+/* experiences.component.css */
+
+.page5 {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  
+  /* background-color: rgb(110, 109, 109); */
+}
+
+.experience-table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: left;
+  
+}
+
+.experience-table tr {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  
+}
+
+.experience-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  width: 48%; /* Ensure columns are equal width */
+  vertical-align: top;
+  border-radius: 10px;
+}
+
+.experience h2, .other-experiences h3 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.experience p, .other-experiences p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.experience ul, .other-experiences ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.experience ul li, .other-experiences ul li {
+  margin-bottom: 5px;
+}
+
+.other-experiences {
+  margin-top: 30px;
+}
+
+.other-experiences h3 {
+  color: #333;
+}
+
+.button-container {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.button-container button {
+  font-size: 1.5rem;
+  color: rgb(4, 4, 4); /* Text color */
+  background-color: rgb(154, 255, 53); /* Transparent background */
+  border: 2px solid black; /* Black border */
+  box-shadow: 0 10px 20px rgba(255, 254, 254, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none; /* Remove underline if used with link */
+}
+
+.button-container button:hover {
+  background-color: rgba(154, 255, 53, 0.383);
+  color: white;
+}
+
+.additional-experience {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.full-width-table {
+  width: 100%; /* Ensure the table spans the full width */
+  margin: 0 auto; /* Center the table */
+  border-collapse: collapse;
+  /* text-align: left; */
+  text-align: center;
+}
+
+.full-width-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.button-container a.show-more-button {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255); /* Text color */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid black; /* Black border */
+  box-shadow: 0 10px 20px rgba(255, 254, 254, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-container a.show-more-button:hover {
+  background-color: black;
+  color: white;
+}

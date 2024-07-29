@@ -10,6 +10,68 @@
   <div id="page2">
     <h1>Experiences</h1>
   </div>
+  <!-- experiences.component.html -->
+
+  <div class="page5" id="experiences">
+    <table class="experience-table">
+        <tr>
+            <td>
+                <h2>Junior Associate</h2>
+                <p><strong>Unified Infotech · Full-time</strong><br>
+                    Apr 2021 - Jul 2022 · 1 yr 4 mos<br>
+                    Kolkata, India</p>
+                <ul>
+                    <li><strong>Full-Stack Development:</strong> Enhanced technical and collaborative skills by working with AngularJS and Vue.js for creating dynamic and interactive web applications.</li>
+                    <li><strong>Backend Integration:</strong> Developed problem-solving and analytical skills through communicating with backend APIs for data fetching and manipulation.</li>
+                    <li><strong>Optimization:</strong> Demonstrated attention to detail and efficiency by improving application performance through lazy loading and optimized data fetching techniques.</li>
+                    <li><strong>Skills:</strong> Developed a broad technical skill set including JavaScript, TypeScript, HTML5, CSS3, REST APIs, and additional 7 technical skills.</li>
+                </ul>
+            </td>
+            <td>
+                <h2>Work Integrated Learning (WIL)</h2>
+                <p><strong>Lambton College</strong><br>
+                  Jan 2024 - Apr 2024 · 4 mos<br>
+                    Toronto, Ontario, Canada</p>
+                <ul>
+                    <li>Served in rotational leadership roles directing team actions toward delivering weekly deliverables on time.</li>
+                    <li>Planned and implemented complex projects that required prior academic knowledge and yielded practical business results.</li>
+                    <li>Nurtured a supportive team environment that encouraged collaboration and effectively resolved conflicts.</li>
+                    <li>Actively engaged in cultural learning experiences that expanded personal growth and fostered team dynamics.</li>
+                    <li>Developed and implemented communication strategies to ensure clear and consistent project alignment among project team members.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <div class="button-container">
+        <button (click)="toggleAdditionalExperience()">Show Additional Experience</button>
+    </div>
+
+    <div *ngIf="showAdditionalExperience" class="additional-experience">
+        <table class="full-width-table">
+            <tr>
+                <td>
+                    <!-- <h2>Other Experience</h2> -->
+                    <h2>Customer Service Representative & Sales Associate</h2>
+                    <p><strong>Walmart & Canadian Tire Corporation</strong><br>
+                        Jan 2023 - Present · 1 yr 7 mos (Walmart)<br>
+                        Oct 2022 - Dec 2022 · 3 mos (Canadian Tire)<br>
+                        Toronto, Ontario, Canada</p>
+                    <ul>
+                        <li>Enhanced communication skills by effectively handling customer inquiries and complaints.</li>
+                        <li>Developed strong problem-solving abilities through resolving customer issues in a timely manner.</li>
+                        <li>Collaborated with team members to improve overall customer satisfaction and service efficiency.</li>
+                        <li>Adapted to a fast-paced environment, demonstrating flexibility and stress management skills.</li>
+                        <li>Utilized interpersonal skills to build rapport with customers and assist with their purchasing decisions.</li>
+                        <li>Demonstrated teamwork by coordinating with colleagues to ensure a well-organized store environment.</li>
+                        <li>Developed time management skills by balancing multiple tasks and responsibilities during peak seasons.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
   <div id="page3">
     <div class="container work-section">
       <h3 class="text-center mb-4">Some of My Work</h3>

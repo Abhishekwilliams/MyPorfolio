@@ -36,7 +36,7 @@
   justify-content: center;
   height: 60vh;
   width: 100%;
-  background-color: rgb(154, 255, 53);
+  background-color: #9aff35;
 }
 
 #page2 h1 {
@@ -176,11 +176,12 @@ a {
 }
 
 #page5 {
-  background-color: rgb(47, 47, 47);
+  background-color: rgb(0, 0, 0);
+  
 }
 
 #page6 {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(47, 47, 47);
 }
 
 #page5 h2, #page6 h2 {

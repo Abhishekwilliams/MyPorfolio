@@ -116,7 +116,11 @@ export class AppComponent implements OnInit {
       alert('Please fill in all fields correctly.');
     }
   }
+  showAdditionalExperience: boolean = false;
 
+  toggleAdditionalExperience(): void {
+    this.showAdditionalExperience = !this.showAdditionalExperience;
+  }
   resetForm() {
     this.contactForm.reset();
   }
