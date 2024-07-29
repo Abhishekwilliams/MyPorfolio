@@ -94,6 +94,19 @@ export class AppComponent implements OnInit {
         //markers appears
       }
     });
+    gsap.to("#page8 h1", {
+      opacity: 1,
+      x: 0,
+      scrollTrigger: {
+        trigger: "#page8",
+        scroller: "body",
+        start: "top 80%",
+        end: "top 50%",
+        scrub: true,
+        // markers: true  
+        //markers appears
+      }
+    });
   }
 
   onSubmit(event: Event) {

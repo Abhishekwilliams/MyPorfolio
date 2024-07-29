@@ -183,7 +183,11 @@ body {
   padding: 20px;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  /* background-color: rgb(110, 109, 109); */
+  
+  /* background-color: rgb(215, 70, 70); */
+}
+.experience{
+  background-color: #000
 }
 
 .experience-table {
@@ -317,3 +321,6 @@ body {
     flex-direction: row; /* Keep row layout on larger screens */
   }
 }
+
+/* Page 2 styling */
+

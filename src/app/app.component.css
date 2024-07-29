@@ -267,3 +267,22 @@ a {
 .btn:hover {
   background-color: rgba(154, 255, 53, 0.383);
 }
+
+#page8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 100%;
+  background-color: #9aff35;
+}
+
+#page8 h1 {
+  font-size: 15vw;
+  font-weight: 570;
+  color: black;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
